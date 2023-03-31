@@ -31,9 +31,9 @@ int main()
             case 4:c=a/b;
             cout<<"Division is : "<<c<<endl;
             break;
-            case 5: exit(0);
-            cout<<"Thank you"<<endl;
-            
+            case 5: 
+            cout<<"Thank you!!"<<endl;
+            exit(0);
             break;
             default:
                 cout<<"Enter valid choice"<<endl;
