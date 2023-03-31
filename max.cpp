@@ -18,7 +18,7 @@ int main()
             cout<<"First no is greater : "<<a<<endl;
         }
         else{
-            cout<<"Second no is greater : "<<c<<endl;
+            cout<<"Third no is greater : "<<c<<endl;
         }
     }
     else
