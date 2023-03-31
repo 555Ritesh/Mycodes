@@ -12,9 +12,9 @@ int main()
 
     while(1)
     {
-        cout<<"*****MENU*****"<<endl;
-        cout<<" 1.Add\n 2.Substract\n 3.Multiply\n 4.Divide\n 5.Exit";
-        cout<<"\nEnter your choice : ";
+        cout<<"\n***** MENU *****\n"<<endl;
+        cout<<" 1.Add\n 2.Substract\n 3.Multiply\n 4.Divide\n 5.Exit\n";
+        cout<<"Enter your choice : \n";
         cin>>ch;
 
         switch(ch)
