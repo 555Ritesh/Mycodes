@@ -1,0 +1,44 @@
+// Day outing permission only on even date of the month
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int d;
+    int pocketm;
+    int spend;
+    
+    for(d=1; d<=30; d++)
+    {
+        cout<<"Enter Date : ";
+        cin>>d;
+        if(d%2==0)
+        {
+            cout<<"Can go Today"<<endl;
+        }
+        else
+        {
+            cout<<"Can't go Today"<<endl;
+            break;
+        }
+        
+        cout<<"Enter Pocket Money : ";
+        cin>>pocketm;
+        
+        if(pocketm==0)
+        {
+            cout<<"Not enough pocket money"<<endl;
+            cout<<"Cannot go Today"<<endl;
+        }
+        else
+        {
+        cout<<"Amount spend on the day : ";
+        cin>>spend;
+        pocketm=pocketm-spend;
+        cout<<"Total amount remained after expenditure : "<<pocketm<<endl;
+        }
+            
+    }
+    return 0;
+}
