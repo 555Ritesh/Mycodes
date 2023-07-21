@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+ int testcase;
+ cout<<"Enter no. of Testcases : ";
+ cin>>testcase;
+ while(testcase--){
+
+   int A,B,C;
+   cout<<"Enter marks gain of each section (A,B,C) : ";
+   cin>>A>>B>>C; 
+
+   int total_score = A + B + C;
+   cout<<"Total Score obtained : "<<total_score<<endl;
+   int minimum_score = min(A,min(B,C));
+   cout<<"Minimum Score obtained in a perticular section : "<<minimum_score<<endl;
+   
+   if (total_score>=100 && minimum_score>=10){
+      cout<<"PASS"<<endl;
+   }
+   else{
+       cout<<"FAIL"<<endl;
+   }
+  
+ }
+ return 0;
+}
