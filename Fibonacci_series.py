@@ -7,14 +7,14 @@ count = 2
 n = int(input("Enter a number : "))
 def fibonacci(prev1, prev2):
     global count
-    if count <= 19:
+    if count <= n:
         newFibo = prev1 + prev2
         print(newFibo)
-        prev2 = prev1
-        prev1 = newFibo
+        prev1 = prev2
+        prev2 = newFibo
         count += 1
         fibonacci(prev1, prev2)
     else:
         return
 
-fibonacci(1,0)
+fibonacci(0,1)
